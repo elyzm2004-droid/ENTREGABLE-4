@@ -1,1 +1,120 @@
- 
+ /* Requisito de estilo: Fondo degradado azul en el body */
+body {
+    /* Degradado lineal de azul claro a oscuro */
+    background: linear-gradient(135deg, #a8c0ff 0%, #3f2b96 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+    display: flex; /* Para centrar el contenedor blanco */
+    justify-content: center;
+    align-items: flex-start; /* Alineación al inicio de la pantalla */
+    min-height: 100vh;
+}
+
+/* Requisito de estilo: Body dentro de un cuadro blanco */
+.container {
+    max-width: 900px;
+    width: 100%;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    margin-top: 20px; /* Separación superior para mejor visualización */
+}
+
+/* Colores y Encabezados */
+header {
+    background-color: #004d99; /* Azul oscuro para header */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px 10px 0 0; /* Bordes redondeados en la parte superior */
+    margin: -30px -30px 20px -30px; /* Extender el header dentro del contenedor */
+}
+
+h1, h2, h3 {
+    color: #004d99; /* Azul oscuro para encabezados */
+}
+
+.profesion {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #3f2b96;
+}
+
+/* Imagen Personal */
+.perfil-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 15px auto;
+    display: block;
+    border: 5px solid #a8c0ff; /* Borde más claro para contrastar */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Listas y Tablas */
+.funciones li {
+    margin-bottom: 8px;
+    color: #3f2b96; /* Color de texto para funciones */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+thead {
+    background-color: #f2f2f9;
+}
+
+/* Formulario */
+#contactForm label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+#contactForm input[type="text"],
+#contactForm input[type="email"],
+#contactForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#contactForm button {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#contactForm button:hover {
+    background-color: #218838;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+    display: none;
+}
